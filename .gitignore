@@ -27,6 +27,8 @@ GLFW.xcodeproj
 
 # Makefile generator clutter
 Makefile
+bin/*
+lib/*
 
 # Ninja generator clutter
 build.ninja
