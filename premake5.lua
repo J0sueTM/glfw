@@ -22,7 +22,7 @@ project "GLFW"
   language "C"
 
   targetdir("bin/" .. outputdir .. "-%{prj.name}")
-  objdir("lib/" .. outputdir .. "-%{prj.name}")
+  objdir("bin/obj/" .. outputdir .. "-%{prj.name}")
 
   files
 	{
@@ -89,3 +89,4 @@ project "GLFW"
   filter "configurations:Release"
     runtime "Release"
     optimize "On"
+	filter ""
