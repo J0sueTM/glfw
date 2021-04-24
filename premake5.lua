@@ -1,20 +1,19 @@
 --[[
--- \file premake5.lua
--- \author Josué Teodoro Moreira <jteodomo@gmail.com>
--- \date April 07, 2021
+-- file premake5.lua
+-- author Josué Teodoro Moreira <jteodomo@gmail.com>
+-- date April 07, 2021
 --
---  Copyright (C) <year>  <name of author>
+-- Copyright (C) 2021 Josué Teodoro Moreira 
 --
---  This program is free software; you can redistribute it and/or modify
---  it under the terms of the GNU General Public License as published by
---  the Free Software Foundation; either version 2 of the License, or
---  (at your option) any later version.
+-- This program is free software; you can redistribute it and/or modify
+-- it under the terms of the GNU General Public License as published by
+-- the Free Software Foundation; either version 2 of the License, or
+-- (at your option) any later version.
 --
---  This program is distributed in the hope that it will be useful,
---  but WITHOUT ANY WARRANTY; without even the implied warranty of
---  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
---  GNU General Public License for more details.
---
+-- This program is distributed in the hope that it will be useful,
+-- but WITHOUT ANY WARRANTY; without even the implied warranty of
+-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+-- GNU General Public License for more details.
 --]]
 
 project "GLFW"
@@ -55,11 +54,8 @@ project "GLFW"
 			"src/osmesa_context.c",
 			"src/linux_joystick.c"
 		}
-
 		defines
-		{
-			"_GLFW_X11"
-		}
+		{ "_GLFW_X11" }
   filter "system:windows"
     systemversion "latest"
     staticruntime "On"
@@ -76,7 +72,6 @@ project "GLFW"
 			"src/egl_context.c",
 			"src/osmesa_context.c"
 		}
-
 		defines
 		{
 			"_GLFW_WIN32",
